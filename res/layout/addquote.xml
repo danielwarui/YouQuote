@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4c5"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/quoteText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:ems="10"
+        android:hint="@string/quote"
+        android:inputType="textMultiLine"
+        android:textColor="#4f5d73" />
+
+    <EditText
+        android:id="@+id/authority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/quoteAuthority"
+        android:textColor="#4f5d73" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/youquotebuttons"
+        android:text="@string/submit"
+        android:textColor="#d4d4c5" />
+
+    <Button
+        android:id="@+id/view"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewData"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/copyofdb"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ViewCopyofDB"
+        android:text="Copy of DB" />
+
+</LinearLayout>
